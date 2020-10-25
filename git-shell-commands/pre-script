@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+REPO_DIR=/home/git/repos
+
+cd $REPO_DIR
+

@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+cat <<EOF
+Welcome to the MIQ private git server. The available commands are listed below:
+
+  delete [REPOSITORY_NAME]                           - delete a repository
+  edit-description [REPOSITORY_NAME]                 - edit the description for a repository
+  ls                                                 - list the repositories
+  mirror [REPOSITORY_URL]                            - create a mirror of a repository on another server
+  mirror-github-org [ORG_NAME]                       - create a mirror of all repositories owned by a GitHub organization
+  new [REPOSITORY_NAME] 			     - create a new repository
+  rename [OLD_REPOSITORY_NAME] [NEW_REPOSITORY_NAME] - rename a repository
+
+EOF

@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+source "$(dirname "$0")/pre-script"
+
+if [[ -z "$1" ]]; then
+	echo "Please enter a repository name"
+	exit 1
+fi
+
+if [[ ! -d "$1.git" ]]; then
+	echo "Repo $1 doesn't exist"
+	exit 1
+fi
+
+rm -rf "$1.git"
+echo "Successfully deleted repository $1"
+

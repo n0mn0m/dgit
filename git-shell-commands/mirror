@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+source "$(dirname "$0")/pre-script"
+
+if [[ -z "$1" ]]; then
+	echo "Please enter a repository URL"
+	exit 1
+fi
+
+/usr/bin/git clone --mirror "$1"
+echo "Successfully created a mirror of $1"
+
